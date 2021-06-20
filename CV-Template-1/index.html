@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Nadir Bakhsh</title>
     <style>
-        *{
+        * {
             padding: 0px;
             margin: 0px;
             font-family: 'Poppins', sans-serif;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: lightblue;
             min-height: 100vh;
         }
-        .container{
+
+        .container {
             position: relative;
             width: 100%;
             max-width: 1000px;
@@ -33,13 +40,14 @@
             grid-template-columns: 1fr 2fr;
             box-shadow: 0 35px 55px rgba(0, 0, 0, .1);
         }
-        .container .left_Side{
+
+        .container .left_Side {
             position: relative;
             background: #003147;
             padding: 40px;
         }
 
-        .profileText{
+        .profileText {
             position: relative;
             display: flex;
             flex-direction: column;
@@ -57,7 +65,7 @@
 
         }
 
-        .profileText .imgBx img { 
+        .profileText .imgBx img {
             position: absolute;
             top: 0;
             left: 0;
@@ -66,8 +74,8 @@
             object-fit: cover;
 
         }
-        
-        .profileText  h2 {
+
+        .profileText h2 {
             color: #fff;
             font-size: 1.5rem;
             margin-top: 20px;
@@ -87,7 +95,7 @@
             margin-top: 40px;
         }
 
-        .title{
+        .title {
             text-transform: uppercase;
             color: #fff;
             font-weight: 600;
@@ -95,7 +103,7 @@
             margin-top: 20px;
         }
 
-        .contactInfo ul { 
+        .contactInfo ul {
             position: relative;
         }
 
@@ -104,10 +112,10 @@
             list-style: none;
             cursor: pointer;
             margin: 10px 0px;
-            
+
         }
 
-        .contactInfo ul li .text{
+        .contactInfo ul li .text {
             margin-left: 10px;
         }
 
@@ -118,7 +126,7 @@
             color: #03a9f4;
         }
 
-        .contactInfo ul li span{
+        .contactInfo ul li span {
             color: #fff;
         }
 
@@ -129,12 +137,13 @@
         .contactInfo.education h5 {
             color: #03a9f4;
             font-weight: 500;
-        } 
+        }
+
         .contactInfo.education h4:nth-child(2) {
             color: #fff;
             font-weight: 500;
         }
-         
+
         .contactInfo.education h4 {
             color: #fff;
             font-weight: 300;
@@ -143,7 +152,7 @@
         .contactInfo.education h4 {
             color: #fff;
             font-weight: 300;
-        } 
+        }
 
         .contactInfo.languages .percent {
             position: relative;
@@ -153,9 +162,11 @@
             margin-top: 5px;
             display: block;
         }
+
         .contactInfo.languages li:nth-child(2) {
             margin-top: 15px;
         }
+
         .contactInfo.languages .percent div {
             position: absolute;
             top: 0;
@@ -167,6 +178,7 @@
         .contactInfo.socail-media a:nth-child(1) {
             margin-left: 0px;
         }
+
         .contactInfo.socail-media a {
             font-size: 25px;
             color: #03a9fa;
@@ -177,7 +189,7 @@
             color: #fff;
         }
 
-        .container .right_Side{
+        .container .right_Side {
             position: relative;
             background: #fff;
             padding: 40px;
@@ -199,8 +211,9 @@
         }
 
         p {
-           color: #333;
+            color: #333;
         }
+
         .about .box {
             display: flex;
             flex-direction: row;
@@ -217,13 +230,14 @@
             font-weight: 600;
         }
 
-        .about .box  .text h4 {
+        .about .box .text h4 {
             font-size: 16px;
             text-transform: uppercase;
             color: #2a7da2;
-            
+
         }
-        .about .box  .text p {
+
+        .about .box .text p {
             font-size: 14px;
         }
 
@@ -269,16 +283,38 @@
         .stacks img:first-child {
             margin-left: 0px;
         }
+
+        @media (max-width: 1000px) {
+            .container {
+                margin: 10px;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .about .box {
+                flex-direction: column;
+            }
+
+            .about .box .year_company h5 {
+                margin-bottom: 5px;
+            }
+
+            .skills .box {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
     </style>
 </head>
+
 <body>
-    
+
     <div class="container">
-        
+
         <div class="left_Side">
             <div class="profileText">
                 <div class="imgBx">
-                    <img src="./old.jpg" >
+                    <img src="./old.jpg">
                 </div>
                 <h2>
                     Nadir Bakhsh
@@ -291,23 +327,23 @@
                 <ul>
                     <li>
                         <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <span  class="text">+92 3052013106</span>
+                        <span class="text">+92 3052013106</span>
                     </li>
                     <li>
                         <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                        <span  class="text">nadir4k2010@gmail.com</span>
+                        <span class="text">nadir4k2010@gmail.com</span>
                     </li>
                     <li>
                         <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
-                        <span  class="text">www.Website.com</span>
+                        <span class="text">www.Website.com</span>
                     </li>
                     <li>
                         <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
-                        <span  class="text">github.com/NadirBakhsh</span>
+                        <span class="text">github.com/NadirBakhsh</span>
                     </li>
                     <li>
                         <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        <span  class="text">Pakistan, Karachi</span>
+                        <span class="text">Pakistan, Karachi</span>
                     </li>
                 </ul>
             </div>
@@ -316,19 +352,19 @@
                 <h3 class="title">Education</h3>
                 <ul>
                     <li>
-                      <h5>2018 - 2019</h5>
-                      <h4>Web & Mobile App Certified Course</h4>
-                      <h4>SMIT Center Welfare Trust</h4>
+                        <h5>2018 - 2019</h5>
+                        <h4>Web & Mobile App Certified Course</h4>
+                        <h4>SMIT Center Welfare Trust</h4>
                     </li>
                     <li>
-                      <h5>2014 - 2016</h5>
-                      <h4>FSC Degree in Pre-Engineering</h4>
-                      <h4>Govt. Superior s/c College</h3>
+                        <h5>2014 - 2016</h5>
+                        <h4>FSC Degree in Pre-Engineering</h4>
+                        <h4>Govt. Superior s/c College</h3>
                     </li>
                     <li>
-                      <h5>2010 - 2012</h5>
-                      <h4>Matric in Science</h4>
-                      <h4>Ataturk Public Scholl</h3>
+                        <h5>2010 - 2012</h5>
+                        <h4>Matric in Science</h4>
+                        <h4>Ataturk Public Scholl</h3>
                     </li>
                 </ul>
             </div>
@@ -353,79 +389,86 @@
                 <h3 class="title">Social Media</h3>
                 <ul>
                     <li>
-                        <a href="#" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                        <a href="#" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                        <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
-                        <a href="#" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                        <a href="linkedin.com/in/nadir-bakhsh-39807413a" target="_blank"><i
+                                class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/nadir.bakhsh" target="_blank"><i
+                                class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/nadir_bakhsh_1/?fbclid=IwAR0KIxazOUvEWjccmKyTXhrmXOUlI0uFgdOqCtf7yHJZ5xd6cgLqkEW4DXA"
+                            target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                        <a href="https://medium.com/@NadirBakhsh" target="_blank"><i class="fa fa-medium"
+                                aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
-       
-        
+
+
         <div class="right_Side">
             <div class="about">
                 <h2 class="title2">Objective</h2>
                 <p>
-                I have Postgraduate's degree with a background in science. Complete MERN Stack Course in 2019 from SMIT
-                ( Saylani Mass IT Training ). <br /><br /> Certificated Fornt-End Developer with +3 year Experience,
-                +100 Web Applicaition projects completed with APIs intergration, I also developed 3 Android Mobile Application by
-                using React Native stack.
+                    I have Postgraduate's degree with a background in science. Complete MERN Stack Course in 2019 from
+                    SMIT
+                    ( Saylani Mass IT Training ). <br /><br /> Certificated Fornt-End Developer with +3 year Experience,
+                    +100 Web Applicaition projects completed with APIs intergration, I also developed 3 Android Mobile
+                    Application by
+                    using React Native stack.
                 </p>
             </div>
             <div class="about">
                 <h2 class="title2">EXPERIENCE</h2>
-               <div class="box">
-                   <div class="year_company">
-                       <h5>2020 – PRESENT</h5>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2020 – PRESENT</h5>
                         <h5>DESIGNOCRACY</h5>
-                   </div>
-                   <div class="text">
-                   <h4>FRONT-END DEVELOPER</h4>
-                       <p>Responsibilities to developer Front-end through (Figma, XD, PSD), and integrate APIs</p>
-                   </div>
-               </div>
-               <div class="box">
-                   <div class="year_company">
-                       <h5>2020 – 2021</h5>
+                    </div>
+                    <div class="text">
+                        <h4>FRONT-END DEVELOPER</h4>
+                        <p>Responsibilities to developer Front-end through (Figma, XD, PSD), and integrate APIs</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2020 – 2021</h5>
                         <h5>EXPERTIZO</h5>
-                   </div>
-                   <div class="text">
-                       <h4>
-                           FRONT-END DEVELOPER 
+                    </div>
+                    <div class="text">
+                        <h4>
+                            FRONT-END DEVELOPER
                         </h4>
-                       <p>in expertizo I was working as front-end developer,
-                       responsibilities is Developed UI with pixel perfect and 
-                       integrate APIs</p>
-                   </div>
-               </div>
-               <div class="box">
-                   <div class="year_company">
-                       <h5>2015 – 2020</h5>
+                        <p>in expertizo I was working as front-end developer,
+                            responsibilities is Developed UI with pixel perfect and
+                            integrate APIs</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2015 – 2020</h5>
                         <h5>SMS (SCHOOL)</h5>
-                   </div>
-                   <div class="text">
-                    <h4>
-                        COMPUTER INSTRUCTOR
-                    </h4>
-                        <p>5-years’ experience of computer instructor and Computer lab in-charge at Sindh Model School.</p>
-                   </div>
-               </div>
-               <div class="box">
-                   <div class="year_company">
-                       <h5>2013 – 2018</h5>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            COMPUTER INSTRUCTOR
+                        </h4>
+                        <p>5-years’ experience of computer instructor and Computer lab in-charge at Sindh Model School.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2013 – 2018</h5>
                         <h5>ICE (INSTITUTE)</h5>
-                   </div>
-                   <div class="text">
-                    <h4>
-                        COMPUTER INSTRUCTOR
-                    </h4>
-                    <p>5-years’ experience Computer instructor in Institute of Computer Education, 
-                    (Teaching: CIT, DIT Course).</p>
-                   </div>
-               </div>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            COMPUTER INSTRUCTOR
+                        </h4>
+                        <p>5-years’ experience Computer instructor in Institute of Computer Education,
+                            (Teaching: CIT, DIT Course).</p>
+                    </div>
+                </div>
             </div>
-    
+
             <div class="about skills">
                 <h2 class="title2">Professional Skills</h2>
                 <div class="box">
@@ -475,20 +518,77 @@
             <div class="about skills">
                 <h4 class="title2">My Stacks</h4>
                 <div class="stacks">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="32" title="Flickr" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                        width="32" title="Flickr" />
                     <img src="./css3.svg" width="32" title="Flickr" />
-                    <img src="data:image/jpeg;base64,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" style="margin-top: 8px;" width="32" height="32" title="Flickr" />
-                    <img src="https://iconape.com/wp-content/files/cb/80901/svg/material-ui.svg" style="margin-top: 8px;" width="32" height="32" title="Flickr" />
-                    <img src="https://camo.githubusercontent.com/3a61a49321fba37513904864aee93be1873b05f2cb84b9c13a5dfbb534ac17fa/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f736173732e737667" width="32" title="Flickr" />
-                    <img src="https://camo.githubusercontent.com/9496882abd182958bcea4238ab44f7eb8928d7a4144c150f18f6c55ceb9b4490/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f6a6176617363726970742e737667" width="32" title="Flickr" />
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" width="32" title="Flickr" />
-                    <img src="https://redux.js.org/img/redux.svg" width="32" title="Flickr" />                   
+                    <img src="data:image/jpeg;base64,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"
+                        style="margin-top: 8px;" width="32" height="32" title="Flickr" />
+                    <img src="https://iconape.com/wp-content/files/cb/80901/svg/material-ui.svg"
+                        style="margin-top: 8px;" width="32" height="32" title="Flickr" />
+                    <img src="https://camo.githubusercontent.com/3a61a49321fba37513904864aee93be1873b05f2cb84b9c13a5dfbb534ac17fa/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f736173732e737667"
+                        width="32" title="Flickr" />
+                    <img src="https://camo.githubusercontent.com/9496882abd182958bcea4238ab44f7eb8928d7a4144c150f18f6c55ceb9b4490/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f6a6176617363726970742e737667"
+                        width="32" title="Flickr" />
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
+                        width="32" title="Flickr" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" width="50"
+                        height="32" title="Flickr" />
+                    <img src="https://redux.js.org/img/redux.svg" width="32" title="Flickr" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" width="50"
+                        title="Flickr" />
+                    <span style="margin-left: 10px; margin-top: 8px; display: inline;">
+                        <svg class="h-25" height="20" viewBox="0 0 100 25">
+                            <g>
+                                <path
+                                    d="M11.71 10.41C10.31 4.33 7.39 2.71 6.65 1.57 6.34 1.06 6.07 0.54 5.84 0 5.8 0.54 5.73 0.88 5.26 1.29 4.32 2.11 0.35 5.3 0.01 12.21 -0.3 18.65 4.82 22.62 5.5 23.03 6.02 23.28 6.65 23.03 6.96 22.8 9.43 21.13 12.8 16.69 11.71 10.41"
+                                    fill="#10AA50"></path>
+                                <path
+                                    d="M5.95 19.5C5.82 21.08 5.72 22 5.38 22.9 5.38 22.9 5.61 24.41 5.76 26L6.32 26C6.45 24.88 6.65 23.76 6.92 22.66 6.21 22.33 5.98 20.89 5.95 19.5Z"
+                                    fill="#B8C4C2"></path>
+                                <path
+                                    d="M7.03 22.75L7.03 22.75C6.34 22.43 6.14 20.94 6.11 19.55 6.28 17.25 6.33 14.95 6.26 12.64 6.22 11.44 6.28 1.46 5.96 0 6.18 0.49 6.43 0.97 6.7 1.44 7.44 2.59 10.33 4.21 11.71 10.32 12.79 16.61 9.47 21.06 7.03 22.75Z"
+                                    fill="#12924F"></path>
+                                <path
+                                    d="M98.46 20.65C97.61 20.65 96.93 19.97 96.92 19.12 96.92 18.28 97.6 17.6 98.45 17.59 99.29 17.58 99.99 18.25 100 19.1 100.01 19.51 99.85 19.9 99.56 20.2 99.27 20.49 98.87 20.65 98.46 20.65L98.46 20.65ZM98.46 17.73C97.89 17.72 97.38 18.06 97.16 18.58 96.94 19.1 97.06 19.7 97.46 20.1 97.86 20.5 98.46 20.62 98.98 20.41 99.51 20.19 99.85 19.69 99.85 19.12 99.86 18.75 99.72 18.39 99.45 18.13 99.19 17.87 98.83 17.72 98.46 17.73L98.46 17.73ZM98.83 20.08L98.44 19.23 98.12 19.23 98.12 20.08 97.88 20.08 97.88 18.15 98.46 18.15C98.88 18.15 99.06 18.33 99.06 18.69 99.06 18.97 98.93 19.15 98.68 19.21L99.09 20.08 98.83 20.08ZM98.12 19.03L98.46 19.03C98.73 19.03 98.84 18.94 98.84 18.69 98.84 18.45 98.74 18.36 98.43 18.36L98.12 18.36 98.12 19.03Z"
+                                    fill="#21313C"></path>
+                                <path
+                                    d="M75.97 19.27C76.38 19.59 77.2 19.73 77.92 19.73 78.85 19.73 79.76 19.55 80.65 18.75 81.56 17.92 82.19 16.66 82.19 14.64 82.19 12.71 81.45 11.13 79.94 10.21 79.08 9.68 77.97 9.47 76.71 9.47 76.35 9.47 75.97 9.48 75.76 9.58 75.67 9.65 75.61 9.75 75.59 9.85 75.55 10.2 75.55 12.83 75.55 14.38 75.55 15.97 75.55 18.19 75.59 18.46 75.61 18.7 75.72 19.1 75.97 19.27M72.1 8.6C72.43 8.6 73.68 8.66 74.27 8.66 75.36 8.66 76.11 8.6 78.15 8.6 79.86 8.6 81.29 9.06 82.32 9.94 83.57 11.02 84.23 12.52 84.23 14.34 84.23 16.93 83.05 18.42 81.86 19.27 80.68 20.15 79.14 20.65 76.95 20.65 75.79 20.65 73.79 20.61 72.12 20.59L72.09 20.59C72.01 20.44 72.23 19.84 72.36 19.82 72.82 19.77 72.94 19.75 73.15 19.67 73.5 19.52 73.58 19.34 73.62 18.71 73.68 17.52 73.66 16.1 73.66 14.49 73.66 13.34 73.68 11.1 73.64 10.39 73.58 9.79 73.33 9.64 72.82 9.52 72.46 9.45 72.1 9.39 71.73 9.35 71.7 9.24 71.99 8.72 72.09 8.6"
+                                    fill="#21313C"></path>
+                                <path
+                                    d="M89 9.54C88.93 9.56 88.83 9.75 88.83 9.85 88.81 10.54 88.79 12.34 88.79 13.58 88.8 13.63 88.84 13.67 88.89 13.68 89.14 13.7 89.76 13.72 90.28 13.72 91.01 13.72 91.43 13.62 91.67 13.51 92.28 13.2 92.57 12.53 92.57 11.8 92.57 10.13 91.41 9.5 89.69 9.5 89.46 9.5 89.23 9.51 89 9.54M93.38 17.2C93.38 15.52 92.14 14.56 89.89 14.56 89.79 14.56 89.07 14.54 88.9 14.58 88.85 14.6 88.79 14.63 88.79 14.67 88.79 15.88 88.77 17.81 88.83 18.58 88.87 18.9 89.1 19.36 89.39 19.5 89.69 19.67 90.39 19.71 90.87 19.71 92.2 19.71 93.38 18.96 93.38 17.2M85.52 8.6C85.69 8.6 86.21 8.66 87.52 8.66 88.75 8.66 89.75 8.62 90.95 8.62 92.43 8.62 94.48 9.16 94.48 11.38 94.48 12.47 93.71 13.35 92.7 13.77 92.65 13.79 92.65 13.83 92.7 13.85 94.13 14.21 95.38 15.09 95.38 16.78 95.38 18.43 94.36 19.46 92.88 20.11 91.97 20.51 90.85 20.65 89.72 20.65 88.85 20.65 86.52 20.56 85.23 20.57 85.1 20.51 85.35 19.9 85.47 19.8 85.77 19.8 86.06 19.75 86.34 19.67 86.81 19.55 86.86 19.4 86.92 18.71 86.96 18.12 86.96 15.99 86.96 14.48 86.96 12.41 86.98 11.02 86.96 10.33 86.94 9.79 86.75 9.62 86.38 9.52 86.09 9.46 85.61 9.41 85.22 9.35 85.13 9.25 85.42 8.68 85.52 8.6"
+                                    fill="#21313C"></path>
+                                <path
+                                    d="M15.95 20.65C15.9 20.52 15.88 20.39 15.89 20.26 15.89 20.17 15.91 20.08 15.95 20 16.2 19.96 16.45 19.91 16.7 19.85 17.05 19.76 17.18 19.57 17.2 19.13 17.25 18.09 17.26 16.15 17.24 14.78L17.24 14.74C17.24 14.59 17.24 14.39 17.05 14.25 16.73 14.05 16.38 13.89 16.02 13.79 15.86 13.74 15.76 13.66 15.77 13.56 15.77 13.46 15.88 13.34 16.09 13.3 16.66 13.24 18.14 12.89 18.72 12.62 18.78 12.7 18.81 12.79 18.8 12.89 18.8 12.95 18.79 13.02 18.78 13.08 18.76 13.27 18.75 13.49 18.75 13.71 18.75 13.77 18.79 13.81 18.84 13.83 18.89 13.85 18.95 13.83 18.99 13.8 20.1 12.93 21.09 12.62 21.6 12.62 22.44 12.62 23.09 13.02 23.59 13.84 23.62 13.88 23.66 13.91 23.71 13.91 23.75 13.91 23.79 13.89 23.81 13.85 24.83 13.08 25.84 12.62 26.52 12.62 28.11 12.62 29.07 13.81 29.07 15.81 29.07 16.38 29.06 17.11 29.06 17.79 29.05 18.39 29.05 18.95 29.05 19.33 29.05 19.43 29.17 19.69 29.36 19.74 29.6 19.85 29.93 19.91 30.36 19.99L30.38 19.99C30.41 20.1 30.34 20.55 30.28 20.64 30.17 20.64 30.02 20.63 29.84 20.62 29.51 20.6 29.05 20.58 28.53 20.58 27.46 20.58 26.91 20.6 26.38 20.63 26.34 20.5 26.33 20.08 26.38 19.99 26.59 19.95 26.81 19.9 27.03 19.84 27.36 19.73 27.46 19.58 27.48 19.13 27.49 18.81 27.55 16.01 27.44 15.35 27.34 14.66 26.82 13.85 25.68 13.85 25.26 13.85 24.58 14.02 23.93 14.52 23.89 14.56 23.86 14.62 23.86 14.68L23.86 14.69C23.94 15.05 23.94 15.47 23.94 16.11 23.94 16.47 23.94 16.85 23.94 17.23 23.93 18 23.93 18.73 23.94 19.29 23.94 19.66 24.17 19.75 24.35 19.82 24.45 19.85 24.53 19.86 24.61 19.88 24.76 19.92 24.92 19.96 25.16 20 25.19 20.16 25.19 20.32 25.15 20.48 25.14 20.54 25.11 20.6 25.08 20.65 24.49 20.63 23.88 20.61 23.01 20.61 22.75 20.61 22.31 20.62 21.93 20.63 21.62 20.64 21.33 20.65 21.16 20.65 21.12 20.54 21.1 20.43 21.1 20.31 21.1 20.2 21.12 20.09 21.17 20L21.4 19.96C21.61 19.92 21.78 19.89 21.95 19.85 22.24 19.75 22.35 19.6 22.37 19.23 22.42 18.37 22.47 15.9 22.35 15.29 22.14 14.29 21.57 13.79 20.66 13.79 20.13 13.79 19.46 14.05 18.91 14.46 18.8 14.56 18.74 14.71 18.75 14.85 18.75 15.15 18.75 15.5 18.75 15.87 18.75 17.11 18.74 18.66 18.77 19.33 18.79 19.53 18.86 19.78 19.25 19.86 19.33 19.89 19.48 19.91 19.65 19.94 19.75 19.96 19.85 19.98 19.96 20 20 20.21 19.98 20.44 19.91 20.65 19.74 20.65 19.53 20.64 19.29 20.63 18.93 20.61 18.47 20.59 17.95 20.59 17.34 20.59 16.92 20.61 16.58 20.63 16.35 20.64 16.15 20.65 15.95 20.65"
+                                    fill="#21313C"></path>
+                                <path
+                                    d="M35.36 13.42C35.04 13.41 34.72 13.5 34.44 13.68 33.77 14.08 33.43 14.88 33.43 16.07 33.43 18.28 34.55 19.83 36.16 19.83 36.59 19.84 37.01 19.69 37.34 19.41 37.83 19.02 38.1 18.2 38.1 17.07 38.1 14.89 37 13.42 35.36 13.42M35.67 20.65C32.77 20.65 31.73 18.54 31.73 16.58 31.73 15.2 32.3 14.13 33.42 13.38 34.21 12.9 35.11 12.64 36.04 12.62 38.26 12.62 39.81 14.19 39.81 16.44 39.81 17.98 39.19 19.18 38.02 19.94 37.46 20.28 36.48 20.65 35.67 20.65"
+                                    fill="#21313C"></path>
+                                <path
+                                    d="M65.17 13.42C64.84 13.41 64.52 13.5 64.25 13.68 63.57 14.08 63.23 14.88 63.23 16.07 63.23 18.28 64.35 19.83 65.96 19.83 66.4 19.84 66.82 19.69 67.15 19.41 67.64 19.02 67.9 18.2 67.9 17.07 67.9 14.89 66.81 13.42 65.17 13.42M65.48 20.65C62.57 20.65 61.54 18.54 61.54 16.58 61.54 15.2 62.11 14.13 63.23 13.38 64.02 12.9 64.92 12.64 65.85 12.62 68.07 12.62 69.62 14.19 69.62 16.44 69.62 17.98 69 19.18 67.83 19.94 67.26 20.28 66.29 20.65 65.48 20.65"
+                                    fill="#21313C"></path>
+                                <path
+                                    d="M55.3 13.35C54.4 13.35 53.81 14.06 53.81 15.14 53.81 16.22 54.31 17.51 55.73 17.51 55.98 17.51 56.42 17.41 56.64 17.17 56.97 16.87 57.19 16.26 57.19 15.61 57.19 14.2 56.49 13.35 55.31 13.35M55.19 20.84C54.93 20.84 54.68 20.9 54.46 21.02 53.74 21.47 53.4 21.92 53.4 22.44 53.4 22.92 53.6 23.31 54.01 23.66 54.52 24.08 55.2 24.28 56.09 24.28 57.86 24.28 58.64 23.35 58.64 22.44 58.64 21.8 58.32 21.37 57.64 21.13 57.12 20.94 56.25 20.84 55.19 20.84M55.31 25.24C54.25 25.24 53.49 25.02 52.84 24.53 52.21 24.05 51.92 23.34 51.92 22.85 51.93 22.54 52.05 22.23 52.27 22 52.45 21.8 52.88 21.41 53.87 20.75 53.9 20.74 53.92 20.71 53.92 20.67 53.92 20.64 53.89 20.6 53.86 20.59 53.04 20.29 52.8 19.79 52.72 19.52 52.72 19.51 52.72 19.49 52.72 19.48 52.69 19.37 52.67 19.27 52.82 19.17 52.93 19.09 53.11 18.98 53.31 18.87 53.58 18.72 53.85 18.55 54.1 18.37 54.12 18.34 54.14 18.3 54.13 18.26 54.12 18.22 54.1 18.19 54.06 18.17 52.86 17.78 52.26 16.9 52.26 15.57 52.25 14.73 52.66 13.93 53.37 13.44 53.85 13.07 55.06 12.62 55.85 12.62L55.9 12.62C56.7 12.64 57.16 12.8 57.79 13.03 58.15 13.16 58.53 13.22 58.91 13.2 59.58 13.2 59.87 13 60.13 12.76 60.17 12.86 60.19 12.98 60.19 13.09 60.21 13.37 60.13 13.64 59.97 13.87 59.84 14.06 59.51 14.19 59.22 14.19 59.19 14.19 59.16 14.19 59.13 14.19 58.97 14.18 58.82 14.15 58.67 14.11L58.59 14.14C58.57 14.17 58.58 14.21 58.6 14.26 58.61 14.27 58.61 14.28 58.61 14.29 58.67 14.53 58.71 14.77 58.72 15.02 58.72 16.41 58.16 17.02 57.55 17.47 56.97 17.9 56.27 18.17 55.53 18.23L55.53 18.23C55.52 18.23 55.44 18.24 55.3 18.25 55.21 18.26 55.09 18.27 55.07 18.27L55.05 18.27C54.92 18.31 54.58 18.47 54.58 18.77 54.58 19.01 54.73 19.32 55.48 19.38L55.96 19.41C56.94 19.48 58.17 19.56 58.75 19.75 59.54 20.02 60.06 20.76 60.04 21.57 60.04 22.82 59.13 24 57.61 24.72 56.89 25.05 56.1 25.23 55.31 25.22"
+                                    fill="#21313C"></path>
+                                <path
+                                    d="M50.73 19.89C50.3 19.83 49.99 19.77 49.63 19.6 49.55 19.53 49.51 19.44 49.49 19.33 49.45 18.75 49.45 17.04 49.45 15.92 49.45 15.01 49.3 14.21 48.91 13.64 48.45 13 47.79 12.62 46.94 12.62 46.19 12.62 45.19 13.13 44.36 13.83 44.34 13.85 44.21 13.97 44.21 13.78 44.22 13.6 44.25 13.22 44.26 12.98 44.28 12.85 44.23 12.71 44.14 12.62 43.6 12.89 42.08 13.25 41.51 13.31 41.1 13.39 41 13.78 41.44 13.92L41.44 13.92C41.79 14.01 42.13 14.16 42.44 14.35 42.61 14.48 42.59 14.67 42.59 14.82 42.61 16.1 42.61 18.05 42.55 19.11 42.53 19.53 42.42 19.68 42.11 19.76L42.14 19.75C41.9 19.81 41.66 19.85 41.42 19.88 41.33 19.98 41.33 20.53 41.42 20.64 41.62 20.64 42.6 20.59 43.41 20.59 44.53 20.59 45.11 20.64 45.4 20.64 45.51 20.51 45.55 20 45.47 19.88 45.21 19.87 44.94 19.83 44.68 19.77 44.37 19.69 44.3 19.54 44.28 19.2 44.24 18.31 44.24 16.41 44.24 15.12 44.24 14.76 44.33 14.59 44.45 14.49 44.84 14.15 45.47 13.92 46.03 13.92 46.57 13.92 46.94 14.09 47.21 14.32 47.52 14.59 47.72 14.98 47.76 15.39 47.84 16.11 47.82 17.56 47.82 18.81 47.82 19.49 47.76 19.66 47.51 19.74 47.39 19.79 47.08 19.85 46.72 19.89 46.6 20 46.64 20.53 46.72 20.65 47.22 20.65 47.8 20.59 48.65 20.59 49.71 20.59 50.38 20.65 50.65 20.65 50.77 20.51 50.81 20.02 50.73 19.89"
+                                    fill="#21313C"></path>
+                            </g>
+                        </svg>
+                    </span>
+                    <img width="80px" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg"
+                        style="margin-top: 10px;" class="devsite-site-logo" alt="Firebase">
+                    <img width="32" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                        style="margin-top: 10px;" class="devsite-site-logo" alt="Firebase">
+                    <img width="32" src="https://cdn.cdnlogo.com/logos/v/16/visual-studio-code.svg"
+                        style="margin-top: 10px;" class="devsite-site-logo" alt="Firebase">
+
                 </div>
             </div>
 
         </div>
-    
+
     </div>
 
 </body>
+
 </html>
