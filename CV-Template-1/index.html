@@ -12,299 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="./style.css" rel="stylesheet" />
     <title>Nadir Bakhsh</title>
-    <style>
-        * {
-            padding: 0px;
-            margin: 0px;
-            font-family: 'Poppins', sans-serif;
-            box-sizing: border-box;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: lightblue;
-            min-height: 100vh;
-        }
-
-        .container {
-            position: relative;
-            width: 100%;
-            max-width: 1000px;
-            margin-top: 20px;
-            min-height: 1000px;
-            background: #fff;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            box-shadow: 0 35px 55px rgba(0, 0, 0, .1);
-        }
-
-        .container .left_Side {
-            position: relative;
-            background: #003147;
-            padding: 40px;
-        }
-
-        .profileText {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 20px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .profileText .imgBx {
-            position: relative;
-            height: 200px;
-            width: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-
-        }
-
-        .profileText .imgBx img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-
-        }
-
-        .profileText h2 {
-            color: #fff;
-            font-size: 1.5rem;
-            margin-top: 20px;
-            text-transform: uppercase;
-            text-align: center;
-            font-weight: 600;
-        }
-
-        .profileText span {
-            font-size: 0.8em;
-            font-weight: 300;
-            color: #fff;
-
-        }
-
-        .contactInfo {
-            margin-top: 40px;
-        }
-
-        .title {
-            text-transform: uppercase;
-            color: #fff;
-            font-weight: 600;
-            letter-spacing: 1px;
-            margin-top: 20px;
-        }
-
-        .contactInfo ul {
-            position: relative;
-        }
-
-        .contactInfo ul li {
-            position: relative;
-            list-style: none;
-            cursor: pointer;
-            margin: 10px 0px;
-
-        }
-
-        .contactInfo ul li .text {
-            margin-left: 10px;
-        }
-
-        .contactInfo ul li .icon {
-            display: inline;
-            width: 30px;
-            font-size: 18px;
-            color: #03a9f4;
-        }
-
-        .contactInfo ul li span {
-            color: #fff;
-        }
-
-        .contactInfo.education li {
-            margin-top: 15px;
-        }
-
-        .contactInfo.education h5 {
-            color: #03a9f4;
-            font-weight: 500;
-        }
-
-        .contactInfo.education h4:nth-child(2) {
-            color: #fff;
-            font-weight: 500;
-        }
-
-        .contactInfo.education h4 {
-            color: #fff;
-            font-weight: 300;
-        }
-
-        .contactInfo.education h4 {
-            color: #fff;
-            font-weight: 300;
-        }
-
-        .contactInfo.languages .percent {
-            position: relative;
-            height: 6px;
-            width: 100%;
-            background: #081921;
-            margin-top: 5px;
-            display: block;
-        }
-
-        .contactInfo.languages li:nth-child(2) {
-            margin-top: 15px;
-        }
-
-        .contactInfo.languages .percent div {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background: #03a9fa;
-        }
-
-        .contactInfo.socail-media a:nth-child(1) {
-            margin-left: 0px;
-        }
-
-        .contactInfo.socail-media a {
-            font-size: 25px;
-            color: #03a9fa;
-            margin-left: 14px;
-        }
-
-        .contactInfo.socail-media a:hover {
-            color: #fff;
-        }
-
-        .container .right_Side {
-            position: relative;
-            background: #fff;
-            padding: 40px;
-        }
-
-        .about {
-            margin-bottom: 50px;
-        }
-
-        .about:last-child {
-            margin-bottom: 0px;
-        }
-
-        .title2 {
-            color: #003147;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            color: #333;
-        }
-
-        .about .box {
-            display: flex;
-            flex-direction: row;
-            margin: 20px 0px;
-        }
-
-        .about .box .year_company {
-            min-width: 150px;
-        }
-
-        .about .box .year_company h5 {
-            color: #848c90;
-            text-transform: uppercase;
-            font-weight: 600;
-        }
-
-        .about .box .text h4 {
-            font-size: 16px;
-            text-transform: uppercase;
-            color: #2a7da2;
-
-        }
-
-        .about .box .text p {
-            font-size: 14px;
-        }
-
-        .skills .box {
-            position: relative;
-            display: grid;
-            grid-template-columns: 150px 1fr;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .skills .box h4 {
-            color: #848c99;
-            font-weight: 500;
-            text-transform: uppercase;
-        }
-
-        .skills .box .percent {
-            position: relative;
-            width: 100%;
-            height: 10px;
-            background: #f0f0f0;
-        }
-
-        .skills .box .percent div {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background-color: #03a9f4;
-        }
-
-        .stacks {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-
-        .stacks img {
-            margin-left: 10px;
-        }
-
-        .stacks img:first-child {
-            margin-left: 0px;
-        }
-
-        @media (max-width: 1000px) {
-            .container {
-                margin: 10px;
-                grid-template-columns: repeat(1, 1fr);
-            }
-        }
-
-        @media (max-width: 600px) {
-            .about .box {
-                flex-direction: column;
-            }
-
-            .about .box .year_company h5 {
-                margin-bottom: 5px;
-            }
-
-            .skills .box {
-                grid-template-columns: repeat(1, 1fr);
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -352,6 +61,14 @@
                 <h3 class="title">Education</h3>
                 <ul>
                     <li>
+                        <h5>2022 - Continue</h5>
+                        <h4>Block Chain Development</h4>
+                        <h4>
+                            Presidential Initiative
+                            for Artificial Intelligence & Computing (PIAIC) 
+                        </h4>
+                    </li>
+                    <li>
                         <h5>2018 - 2019</h5>
                         <h4>Web & Mobile App Certified Course</h4>
                         <h4>SMIT Center Welfare Trust</h4>
@@ -374,7 +91,7 @@
                     <li>
                         <span class="text">English</span>
                         <span class="percent">
-                            <div style="width: 85%;"></div>
+                            <div style="width: 75%;"></div>
                         </span>
                     </li>
                     <li>
@@ -419,12 +136,22 @@
                 <h2 class="title2">EXPERIENCE</h2>
                 <div class="box">
                     <div class="year_company">
-                        <h5>2020 – PRESENT</h5>
+                        <h5>2021 – PRESENT</h5>
                         <h5>DESIGNOCRACY</h5>
                     </div>
                     <div class="text">
                         <h4>FRONT-END DEVELOPER</h4>
                         <p>Responsibilities to developer Front-end through (Figma, XD, PSD), and integrate APIs</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2022 – PRESENT</h5>
+                        <h5>Pikky.io (part time)</h5>
+                    </div>
+                    <div class="text">
+                        <h4>FRONT-END DEVELOPER</h4>
+                        <p>Responsibilities to build user-interface through figma and improve UX, Animation implementation by JS Libraries </p>
                     </div>
                 </div>
                 <div class="box">
@@ -480,7 +207,7 @@
                 <div class="box">
                     <h4>javascript</h4>
                     <div class="percent">
-                        <div style="width: 80%;"></div>
+                        <div style="width: 75%;"></div>
                     </div>
                 </div>
                 <div class="box">
@@ -533,7 +260,6 @@
                         width="32"  />
                     <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" width="50"
                         height="32"  />
-                    <img src="https://redux.js.org/img/redux.svg" width="32"  />
                     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" width="50"
                          />
                     <span style="margin-left: 10px; margin-top: 8px; display: inline;">
